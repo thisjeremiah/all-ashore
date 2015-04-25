@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		875B25761AEAC112009E3C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B25751AEAC112009E3C25 /* AppDelegate.swift */; };
 		875B25791AEAC112009E3C25 /* AllAshore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 875B25771AEAC112009E3C25 /* AllAshore.xcdatamodeld */; };
-		875B257B1AEAC112009E3C25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B257A1AEAC112009E3C25 /* ViewController.swift */; };
+		875B257B1AEAC112009E3C25 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B257A1AEAC112009E3C25 /* InitialViewController.swift */; };
 		875B257E1AEAC112009E3C25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875B257C1AEAC112009E3C25 /* Main.storyboard */; };
 		875B25801AEAC112009E3C25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875B257F1AEAC112009E3C25 /* Images.xcassets */; };
 		875B25831AEAC112009E3C25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875B25811AEAC112009E3C25 /* LaunchScreen.xib */; };
 		875B258F1AEAC112009E3C25 /* AllAshoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B258E1AEAC112009E3C25 /* AllAshoreTests.swift */; };
+		875B259B1AEACCBD009E3C25 /* SimpleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B259A1AEACCBD009E3C25 /* SimpleTableCell.swift */; };
+		875B259D1AEACD55009E3C25 /* SpeciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B259C1AEACD55009E3C25 /* SpeciesViewController.swift */; };
+		875B259F1AEAF207009E3C25 /* Taxonomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B259E1AEAF207009E3C25 /* Taxonomy.swift */; };
+		875B25A31AEB0956009E3C25 /* TypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B25A21AEB0956009E3C25 /* TypesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		875B25741AEAC112009E3C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		875B25751AEAC112009E3C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875B25781AEAC112009E3C25 /* AllAshore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AllAshore.xcdatamodel; sourceTree = "<group>"; };
-		875B257A1AEAC112009E3C25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		875B257A1AEAC112009E3C25 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		875B257D1AEAC112009E3C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		875B257F1AEAC112009E3C25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		875B25821AEAC112009E3C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		875B25881AEAC112009E3C25 /* AllAshoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllAshoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		875B258D1AEAC112009E3C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		875B258E1AEAC112009E3C25 /* AllAshoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAshoreTests.swift; sourceTree = "<group>"; };
+		875B259A1AEACCBD009E3C25 /* SimpleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableCell.swift; sourceTree = "<group>"; };
+		875B259C1AEACD55009E3C25 /* SpeciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeciesViewController.swift; sourceTree = "<group>"; };
+		875B259E1AEAF207009E3C25 /* Taxonomy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taxonomy.swift; sourceTree = "<group>"; };
+		875B25A21AEB0956009E3C25 /* TypesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +87,13 @@
 		875B25721AEAC112009E3C25 /* AllAshore */ = {
 			isa = PBXGroup;
 			children = (
+				875B25A21AEB0956009E3C25 /* TypesViewController.swift */,
 				875B25751AEAC112009E3C25 /* AppDelegate.swift */,
-				875B257A1AEAC112009E3C25 /* ViewController.swift */,
+				875B259E1AEAF207009E3C25 /* Taxonomy.swift */,
+				875B257A1AEAC112009E3C25 /* InitialViewController.swift */,
 				875B257C1AEAC112009E3C25 /* Main.storyboard */,
+				875B259A1AEACCBD009E3C25 /* SimpleTableCell.swift */,
+				875B259C1AEACD55009E3C25 /* SpeciesViewController.swift */,
 				875B257F1AEAC112009E3C25 /* Images.xcassets */,
 				875B25811AEAC112009E3C25 /* LaunchScreen.xib */,
 				875B25771AEAC112009E3C25 /* AllAshore.xcdatamodeld */,
@@ -215,9 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				875B257B1AEAC112009E3C25 /* ViewController.swift in Sources */,
+				875B25A31AEB0956009E3C25 /* TypesViewController.swift in Sources */,
+				875B257B1AEAC112009E3C25 /* InitialViewController.swift in Sources */,
 				875B25761AEAC112009E3C25 /* AppDelegate.swift in Sources */,
+				875B259D1AEACD55009E3C25 /* SpeciesViewController.swift in Sources */,
 				875B25791AEAC112009E3C25 /* AllAshore.xcdatamodeld in Sources */,
+				875B259B1AEACCBD009E3C25 /* SimpleTableCell.swift in Sources */,
+				875B259F1AEAF207009E3C25 /* Taxonomy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

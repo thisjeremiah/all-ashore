@@ -9,11 +9,13 @@
 import UIKit
 import CoreData
 
+// declare globals
+var taxonomy : [String: [String:[String]]] = Taxonomy().model
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
